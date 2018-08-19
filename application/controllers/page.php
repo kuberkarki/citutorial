@@ -1,5 +1,6 @@
 <?php
-class page extends CI_Controller{
+include_once(APPPATH.'controllers/Frontend_controller.php');
+class page extends Frontend_Controller{
 
 	public function index($page='welcome'){
 
@@ -10,10 +11,7 @@ class page extends CI_Controller{
 			$page='index';
 		}
 
-		$this->load->view('template/header');
-		$this->load->view('page/'.$page,$data);
-		// echo "Hi I'm blog";
-		$this->load->view('template/footer');
+		$this->display('page/'.$page,$data);
 
 	}
 	

@@ -1,6 +1,6 @@
 <?php
-include_once(APPPATH.'controllers/Frontend_controller.php');
-class blog extends Frontend_controller{
+include_once(APPPATH.'controllers/Admin_controller.php');
+class blog extends Admin_controller{
 
 
 	public function __construct(){
